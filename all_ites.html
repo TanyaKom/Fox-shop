@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all_ites.css">
+    <link rel="stylesheet" href="./css/box.all_ites.css">
+    <link rel="stylesheet" href="./css/mobile.all.ites.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <title>All ites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:wght@400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="blur-container">
+
+    <header>
+        <div class="header-top">
+            <div class="container"> 
+                <nav class="nav">
+                    <div class="nav-logo">
+                        <img src="./pictures/history/logo.png" href="#!" alt="logo">
+                    </div> 
+
+                    <ul class="nav-list">
+                        <li><a href="./index.html">MAIN PAGE</a></li>
+                        <li><a href="./our_history.html">OUR HISTORY</a></li>
+                        <li><a href="">ALL ITES</a></li>
+                    </ul>
+                
+                    <div class="nav-icons">
+                        <div class="basket">
+                            <img src="./pictures/history/basket.png" alt="basket">
+                            <div class="quantity">0</div>
+                        </div>
+                        <img src="./pictures/history/fox.png" alt="fox-icon">
+                    </div>
+                </nav>
+            </div>
+      
+
+            <div class="mobile-menu">
+                <nav>            
+                    <input type="checkbox" id="touch-menu" checked>
+                    <label for="touch-menu" class="touch-menu">
+                        <div class="touch-menu">
+                            <img src="./pictures/mob-dotes.png" alt="Dotes">
+                        </div>
+                    </label>
+                    <ul class="slide">
+                            <div class="margines-mob">
+                                <nav>
+                                    <ul class="menu-slide-text">
+                                    <li><a href="./index.html">MAIN PAGE</a></li>
+                                    <li><a href="./our_history.html">OUR HISTORY</a></li>
+                                    <li><a href="./all_ites.html">ALL ITES</a></li>
+                                    </ul>
+                                </nav>
+                            
+                                <img src="./pictures/history/close-circle.png" alt="Close" class="close-logo">
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    </div>
+        <div class="box">
+            <div class="closeBox">
+                <img src="./pictures/history/close.png" alt="close">
+            </div>
+            <h3>box</h3>
+            <h1>Your bag</h1>
+            <ul class="box-card"></ul>
+            <div class="checkout">
+                <div class="total-all">
+                    <p class="total">Total:</p> 
+                    <p class="total-sum">0</p>
+                </div>
+                <div class="closeBox">
+                    <button class="closeBox-button" id="closeBox-button">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+    <div class="blur-container">
+    <main>
+        <div class="header-title">
+            <p>Home/All ites</p>
+            <h1>All Ites</h1>
+        </div>
+        <div class="main-container">   
+            <div class="main-content">   
+                <div class="content-main-part">
+
+                
+                <div class="functions">
+                    <input type="text" id="input" placeholder="Search">
+                    <div class="selection-type">
+                        <h3>Topic</h3>
+                        <div class="highlight-title" id="filter-list">
+                            <div class="topic-titles">
+                                <p><span class="title-txt" data-filter="forest">Forest</span></p>
+                                <p><span class="title-txt" data-filter="kids">Foxs kids</span></p>
+                                <p><span class="title-txt" data-filter="other">Other</span></p>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-choose">
+                        <p>Price</p>
+                        <div class="range">
+                            <input type="range" min="0" max="1000" value="0" step="10" class="slider" id="myRange">
+                            <p><span class="value" id="value">Value: 0$</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-results" id="no-results">
+                    <p>No results</p>
+                </div>
+
+                <div class="cards" id="cards">
+                    <div class="card forest" data-item-id="1">
+                        <img src="./pictures/all/Stylish chair.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$120.00" data-category="Forest">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$120.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Forest</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card other" data-item-id="2">
+                        <img src="./pictures/all/Stylish chair2.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$350.00" data-category="Office">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$350.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Office</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card kids" data-item-id="3">
+                        <img src="./pictures/all/Stylish chair3.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$420.00" data-category="Foxkid">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$420.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Foxkid</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card kids" data-item-id="4">
+                        <img src="./pictures/all/Stylish chair4.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$650.00" data-category="Foxkid">
+
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$650.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Foxkid</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card forest" data-item-id="5">
+                        <img src="./pictures/all/Stylish chair5.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$780.00" data-category="Forest">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$780.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Forest</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card other" data-item-id="6">
+                        <img src="./pictures/all/Stylish chair6.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$630.00" data-category="Other">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$630.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Other</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card forest" data-item-id="7">
+                        <img src="./pictures/all/Stylish chair7.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$550.00" data-category="Forest">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$550.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Forest</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+
+                    <div class="card kids" data-item-id="8">
+                        <img src="./pictures/all/Stylish chair8.png" alt="Fox-img">
+                        <div class="fox-card-text" data-price="$290.00" data-category="Foxkid">
+                            <p class="fox-type">Stylish chair</p>
+                            <p class="fox-price">$290.00</p>
+                            <img src="./pictures/all/stars.png" alt="stars">
+                            <p class="fox-name">Foxkid</p>
+                        </div>
+                        <div class="add-plus">
+                            <span class="material-symbols-outlined">Add</span>
+                            <p>Add</p>
+                        </div>
+                    </div>
+                </div> 
+                </div>
+            </div>
+
+            <div class="container">
+                <button class="hero-btn" id="hero-btn">All foxes</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container"> 
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <img src="./pictures/logo.png" alt="logo">
+                    <p>Lorem ipsum dolor sit amet <br>consectetur consectetur</p>
+                    <p>Call us : 8956 3254 7887</p>
+                    <div class="contacts">
+                        <img src="./pictures/instagram-logo.png" alt="Instagram logo">
+                        <img src="./pictures/telegram-logo.png" alt="Telegram logo">
+                        <img src="./pictures/twitter-logo.png" alt="Twitter logo">
+                    </div>
+                </div>
+            <div class="footer-all-content">
+
+               
+                <div>
+                    <h3>Shop</h3>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+
+                <div>
+                    <h3>Products</h3>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+
+                <div>
+                    <h3>Collection</h3>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div>
+                    <h3>Weekly updates</h3>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div>
+                    <h3>About us</h3>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="footer-data">
+                <p>Storelogo, 2023 All rights reserved</p>
+            </div>    
+    </footer>
+</div>
+    <script src="./js/script.js"></script>
+    <script src="./js/box.all_ites.js"></script>
+</body>
+</html>

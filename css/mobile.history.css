@@ -1,0 +1,194 @@
+@media (max-width: 1500px) {
+    .container, .footer-container{
+        margin: 0 auto;
+        padding: 0 150px;
+    }
+}
+@media (max-width: 1100px) {
+    .container, .footer-container {
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+}
+@media (max-width: 950px) {
+    .hero {
+        margin-bottom: 0px;
+    }
+    .hero-content {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .end-part {
+        flex-direction: column-reverse;    
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 20px;
+        width: 100%;
+    }
+    .top-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 20px;
+        width: 100%;
+    }
+    .text-top-part, .text-end-part {
+        margin-left: 30px;
+    }
+    .text-top-part h2, .text-end-part h2 {
+        margin-top: 20px;
+    }
+    .top-part img {
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .footer-all-content {
+        display: flex;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 870px) {
+    .end-part {
+        flex-direction: column-reverse;    
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacts {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin: auto 10px auto;
+    }
+    .footer-contacts img {
+        width: 122px;
+        height: 22px;
+        margin: auto;
+    }
+    .footer-all-content {
+        display: flex;
+        margin: auto;
+        grid-column-gap: 40px;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+    .contacts img {
+        width: 23px;
+        height: 23px;
+    }
+}
+@media (max-width: 730px) {
+    .footer-all-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        padding: 0px;
+        grid-column-gap: 80px;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media (max-width: 695px) {
+    .container, .footer-container{
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .end-part {
+        flex-direction: column-reverse;    
+    }
+    .header-top {
+        background-color: var(--bg-mobile);
+        height: 50px;
+    }
+    .nav-icons {
+        padding-top: 15px;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .margines-mob {
+        display: flex;
+        width: auto;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-logo {
+        padding-left: 250px;
+        padding-top: 15px;
+    }
+    .touch-menu {
+        margin-top: -55px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+   .slide {
+        background-color: var(--bg-mobile);
+        transition: filter 0ms ease-in-out 0ms;
+        color: var(--font-color);
+        margin-left: 0px;
+        margin-top: 0px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30.48px;
+        position: relative;
+    }
+    #touch-menu {
+        position: absolute;
+        left: -9999px;
+    }
+    li {
+        list-style: none;
+        margin-top: 20px;
+    }
+    .menu-slide-text a {
+        text-decoration: none;
+        list-style-type: none;
+        color: var(--font-color);
+    }
+    .margines-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        text-align: center;
+    }
+    .close-logo {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        cursor: pointer;
+    }
+    .slide, .menu-slide-text,.margines-mob ul {
+        padding-left: 0;
+    }
+    .menu-slide-text a:hover {
+        cursor: pointer;
+        color: var(--main-orange-color);
+    }
+    .slide {
+        display: none;
+    }
+    #touch-menu:checked ~ nav .slide {
+        display: block;
+    }
+}

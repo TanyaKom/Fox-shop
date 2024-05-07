@@ -1,0 +1,296 @@
+body {
+    margin: 0px auto;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+.blur {
+    filter: blur(5px);
+    background-color: var(--blur-bg);
+    transition: filter 0ms ease-in-out 300ms;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1170px;
+}
+.container-hero {
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1170px;
+}
+.mobile-menu {
+    display: none;
+}
+/* #region header */
+header {
+    height: auto;
+    width: 100%;
+    background-image: url(../pictures/background-img.png);    
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto;
+}
+.header-content {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../pictures/background-img.png);    
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header-top {
+    width: auto;
+    height: 102px;
+    background-color: var(--header-top-background-color);
+}
+.nav-list {
+    justify-content: space-around;
+    gap: 35px; 
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    column-gap: 50px;
+    list-style: none;
+}
+.nav-list a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-list a:hover {
+    color: var(--main-orange-color);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    padding-top: 40px;
+}
+.nav-icons {
+    padding-top: 40px;
+    display: flex;
+}
+.nav-icons img, .basket img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.quantity {
+    background-color: var(--main-orange-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    margin: -32px 13px;
+}
+.header-content h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90px;
+    color: var(--font-color);
+    margin-top: 50px;
+}
+.header-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 60px;
+    color: var(--font-color);
+    width: auto;
+    margin-top: 40px;
+}
+/* #endregion header */
+/* #region hero */
+.hero {
+    width: auto;
+    height: auto;
+    margin-top: 106px;
+    margin-bottom: 56px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    flex-direction: column;
+    margin-left: 30px;
+}
+.food {
+    width: 460px;
+    height: 220px;
+    background-color: var(--hero-content-bg-color);
+    display: flex;
+    margin-bottom: 32px;
+    position: relative;
+}
+.food img {
+    width: 122px;
+    height: 205px;
+    margin: 2px 55px 17px auto;
+}
+.office {
+    width: 460px;
+    height: 220px;
+    background-color: var(--hero-content-bg-color);
+    display: flex;
+    position: relative;
+}
+.card-cook {
+    margin-left: 45px;
+}
+.office img {
+    width: 156px;
+    height: 222px;
+    margin-left: 54px;
+}
+.house {
+    width: 485px;
+    height: 472px;
+    background-color: var(--hero-content-bg-color);
+    display: flex;
+    margin-left: 34px;
+    position: relative;
+}
+.house img {
+    width: 360px;
+    height: 461px;
+}
+.food p, .office p, .house p {
+    color: var(--font-p-input-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.food h2, .office h2, .house h2 {
+    font-family: "Playfair Display", sans-serif;
+    color: var(--main-dark-color);
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+}
+.hero-btn {
+    background-color: #CC5520;
+    color: var(--font-color);
+    width: 598px;
+    height: 70px;
+    border: 2px solid transparent;
+    margin: 70px auto auto auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn:hover {
+    background-color: var(--main-orange-hover);
+}
+/* #endregion hero */
+/* #region subscribe */
+.subscribe {
+    height: 487px;
+    width: auto;
+    background-color: var(--subscribe-bg-color);
+    display: flex;
+    justify-content: center;
+}
+.subscribe-content {
+    margin: 107px auto 158px auto;
+    text-align: center;
+}
+.subscribe-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.subscribe-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.subscribe-btn {
+    width: 214px;
+    height: 69px;
+    color: var(--font-color);
+    background-color: var(--main-dark-color);
+    border: 1px solid transparent;
+    margin-left: -4px;
+    cursor: pointer;
+}
+.subscribe-btn:hover {
+    background-color: var(--subscribe-btn-hover);
+}
+.subscribe-content input {
+    width: 541px;
+    height: 65px;
+    border: 1px solid var(--subscribe-input);
+    color: var(--subscribe-input);
+    text-align: center;
+    margin-top: 40px;
+}
+/* #endregion subscribe */
+/* #region footer */
+footer {
+    width: auto;
+    height: auto;
+    background-color: var(--footer-bg-color);
+    color: var(--font-color);
+}
+.footer-container {
+    margin: 0 auto;
+    padding: 0 375px;
+}
+.footer-content, .footer-all-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+.footer-contacts {
+    margin-left: auto;
+}
+.footer-all-content {
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+}
+footer h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.contacts img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.footer-data {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+/* #endregion footer */

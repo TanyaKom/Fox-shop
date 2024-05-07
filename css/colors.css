@@ -1,0 +1,29 @@
+:root {
+    --header-top-background-color: rgba(0, 0, 0, 0.5);
+    --bg-mobile: rgb(0, 0, 0, 0.45);
+    --bg-slide-mobile: rgb(0, 0, 0, 0.6);
+    --blur-bg: rgba(0, 0, 0, 0.8);
+
+    --font-color: #FFF;
+    --font-grey-color:#959595;
+    --font-text-color: #484848;
+    --font-p-input-color: #969595;
+
+    --header-bg-color:#E6E6E6;
+    --header-bg-ites: #F9F9F9;
+
+    --main-orange-color: #CC5520;
+    --main-orange-hover: #ff6b2c;
+    --main-dark-color: #000;
+
+    --hero-content-bg-color: #F4F4F4;
+    --remove-item-color: #8C8C8C;;
+
+    --shadow: #b6b6b6;
+
+    --subscribe-bg-color: #EFEFEF;
+    --subscribe-btn-hover: #383838;
+    --subscribe-input: #9A9494;
+
+    --footer-bg-color: #191919;
+}
